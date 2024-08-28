@@ -111,7 +111,11 @@ function ProductCreate(){
                         <Field as="textarea" id="description" name="description" className="form-control"/>
                         <ErrorMessage name="description" component="div" className="text-danger"/>
                     </div>
-                    <button type="submit" className="btn btn-primary">Thêm mới</button>
+                    <div className="d-flex justify-content-center gap-4">
+                        <button type="submit" className="btn btn-primary">Thêm mới</button>
+                        <button type="button" className="btn btn-secondary" onClick={() => navigate("/products")}>Hủy
+                        </button>
+                    </div>
                 </Form>
             </Formik>
         </div>

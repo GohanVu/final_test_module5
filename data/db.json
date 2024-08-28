@@ -44,6 +44,51 @@
       "quantity": 100,
       "price": 130000,
       "description": "haha"
+    },
+    {
+      "id": "PROD-0442",
+      "name": "Vitamin B2",
+      "categoryId": "G001",
+      "entryDate": "2024-08-19",
+      "quantity": 100,
+      "price": 40003,
+      "description": ""
+    },
+    {
+      "id": "PROD-0439",
+      "name": "Vitamin B1",
+      "categoryId": "G001",
+      "entryDate": "2024-08-08",
+      "quantity": 20,
+      "price": 10000,
+      "description": ""
+    },
+    {
+      "id": "PROD-0433",
+      "name": "Máy xông mũi",
+      "categoryId": "G002",
+      "entryDate": "2024-08-04",
+      "quantity": 2,
+      "price": 10000000,
+      "description": ""
+    },
+    {
+      "id": "PROD-0008",
+      "name": "Máy hồi sức",
+      "categoryId": "G002",
+      "entryDate": "2024-08-20",
+      "quantity": 4,
+      "price": 500000,
+      "description": ""
+    },
+    {
+      "id": "PROD-0555",
+      "name": "AI Machine",
+      "categoryId": "G002",
+      "entryDate": "2024-08-20",
+      "quantity": 5,
+      "price": 5412300,
+      "description": ""
     }
   ],
   "category": [

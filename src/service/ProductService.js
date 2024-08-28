@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 const URL_PRODUCTS = "http://localhost:8080/products";
 const URL_CATEGORY = "http://localhost:8080/category"
 
@@ -14,7 +15,7 @@ export const getAllProducts = async (name) => {
     } catch (e){
         console.log(e);
         return {
-            books: [], category: []
+            products: [], category: []
         }
     }
 };

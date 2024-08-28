@@ -8,10 +8,10 @@ function ProductListFunc(){
     const [name,setName] = useState("");
 
     const fetchProducts = async (name) => {
-        let  res = await getAllProducts(name);
-        res.products.sort((a, b)=> a.quantity - b.quantity)
+        let res = await getAllProducts(name);
+        res.products.sort((a, b) => a.name.localeCompare(b.name));
         setProduct(res.products);
-        setCategory(res.category)
+        setCategory(res.category);
     }
 
 
@@ -47,33 +47,36 @@ function ProductListFunc(){
                     placeholder="Search by product name"
                 />
             </div>
+            {products.length > 0 ? (
             <table className="table table-striped">
                 <thead>
                 <tr>
                     <th>STT</th>
+                    <th>CODE</th>
                     <th>Name</th>
                     <th>Category</th>
                     <th>Quantity</th>
                     <th>Price</th>
                     <th>Entry Date</th>
-
-
                 </tr>
                 </thead>
                 <tbody>
                 {products.map((item, index) => (
                     <tr key={item.id}>
                         <td>{index + 1}</td>
+                        <td>{item.id}</td>
                         <td>{item.name}</td>
                         <td>{getCategoryName(item.categoryId)}</td>
                         <td>{item.quantity}</td>
                         <td>{item.price}</td>
                         <td>{formatDate(item.entryDate)}</td>
-
                     </tr>
                 ))}
                 </tbody>
             </table>
+            ) : (
+                <p>Không có kết quả</p>
+            )}
         </div>
     );
 
